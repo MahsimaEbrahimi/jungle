@@ -6,13 +6,24 @@ using System.Threading.Tasks;
 
 namespace Magic_World
 {
-    class Animal
+     abstract class Animal
     {
+        private string Animal_type;
         private string Animal_Name;
         private int Animal_Age;
         private int Animal_Amount_Hunger;
         private int Animal_Number_Child;
         private bool Animal_Hunger;
+
+        public string getAnimal_type()
+        {
+            return Animal_type;
+        }
+        public void setAnimal_type(string animal_type)
+        {
+            Animal_type = animal_type;
+        }
+
         public string getName()
         {
             return Animal_Name;

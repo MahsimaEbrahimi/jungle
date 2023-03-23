@@ -17,15 +17,17 @@ namespace Magic_World
         {
             Rabit_jump_rate = rabit_jump_rate;
         }
-        public Rabit(string Rabit_name,int Rabit_age,int Rabit_amount_hunger,int Rabit_number_child,bool Rabit_hunger, int Rabit_jump_rate)
+
+        public Rabit(string Rabit_type,string Rabit_name,int Rabit_age,int Rabit_amount_hunger,int Rabit_number_child,bool Rabit_hunger)
         {
-            this.setRabit_jump_rate(Rabit_jump_rate);
+            //   this.setRabit_jump_rate(Rabit_jump_rate);
+            this.setAnimal_type(Rabit_type);
             this.setName(Rabit_name);
             this.setAge(Rabit_age);
             this.setAmount_Hunger(Rabit_amount_hunger);
             this.setNumber_Child(Rabit_number_child);
             this.setAnimal_hunger(Rabit_hunger);
-            this.setRabit_jump_rate(Rabit_jump_rate);
+           // this.setRabit_jump_rate(Rabit_jump_rate);
         }
     }
 

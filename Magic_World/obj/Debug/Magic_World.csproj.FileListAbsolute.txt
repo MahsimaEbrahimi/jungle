@@ -1,1 +1,9 @@
 c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\bin\Debug\Magic_World.exe.config
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\bin\Debug\Magic_World.exe
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\bin\Debug\Magic_World.pdb
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\obj\Debug\Magic_World.csprojResolveAssemblyReference.cache
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\obj\Debug\Magic_World.main_jungle.resources
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\obj\Debug\Magic_World.Properties.Resources.resources
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\obj\Debug\Magic_World.csproj.GenerateResource.Cache
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\obj\Debug\Magic_World.exe
+c:\users\mahsima\documents\visual studio 2015\Projects\Magic_World\Magic_World\obj\Debug\Magic_World.pdb
