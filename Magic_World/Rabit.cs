@@ -8,7 +8,8 @@ namespace Magic_World
 {
     class Rabit:Animal
     {
-        private int Rabit_jump_rate;
+
+        private int Rabit_jump_rate;//how far can a rabit jump
         public int getRabit_jump_rate()
         {
             return Rabit_jump_rate;
@@ -17,6 +18,7 @@ namespace Magic_World
         {
             Rabit_jump_rate = rabit_jump_rate;
         }
+
 
         public Rabit(string Rabit_type,string Rabit_name,int Rabit_age,int Rabit_amount_hunger,int Rabit_number_child,bool Rabit_hunger)
         {

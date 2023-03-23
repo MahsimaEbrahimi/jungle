@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Rabit_add = new System.Windows.Forms.Button();
+            this.btn_Rabit_add = new System.Windows.Forms.Button();
             this.txtAnimal_Age = new System.Windows.Forms.TextBox();
             this.txtAnimal_Amount_Hunger = new System.Windows.Forms.TextBox();
             this.txtAnimal_Number_Child = new System.Windows.Forms.TextBox();
@@ -38,21 +38,23 @@
             this.lblAnimal_Hunger = new System.Windows.Forms.Label();
             this.combo_Animal_type = new System.Windows.Forms.ComboBox();
             this.lbl_Animal_type = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_show_all_animals = new System.Windows.Forms.Label();
             this.chk_animal_state = new System.Windows.Forms.CheckBox();
             this.txtanimal_name = new System.Windows.Forms.TextBox();
             this.lblanimal_name = new System.Windows.Forms.Label();
+            this.btn_show_number_of_all_animals = new System.Windows.Forms.Button();
+            this.lblshow_all_count_animals_2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Rabit_add
+            // btn_Rabit_add
             // 
-            this.Rabit_add.Location = new System.Drawing.Point(472, 236);
-            this.Rabit_add.Name = "Rabit_add";
-            this.Rabit_add.Size = new System.Drawing.Size(149, 53);
-            this.Rabit_add.TabIndex = 0;
-            this.Rabit_add.Text = "add rabit";
-            this.Rabit_add.UseVisualStyleBackColor = true;
-            this.Rabit_add.Click += new System.EventHandler(this.Rabit_add_Click);
+            this.btn_Rabit_add.Location = new System.Drawing.Point(472, 236);
+            this.btn_Rabit_add.Name = "btn_Rabit_add";
+            this.btn_Rabit_add.Size = new System.Drawing.Size(149, 53);
+            this.btn_Rabit_add.TabIndex = 0;
+            this.btn_Rabit_add.Text = "add rabit";
+            this.btn_Rabit_add.UseVisualStyleBackColor = true;
+            this.btn_Rabit_add.Click += new System.EventHandler(this.Rabit_add_Click);
             // 
             // txtAnimal_Age
             // 
@@ -121,7 +123,8 @@
             this.combo_Animal_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_Animal_type.FormattingEnabled = true;
             this.combo_Animal_type.Items.AddRange(new object[] {
-            "rabit"});
+            "rabit",
+            "snake"});
             this.combo_Animal_type.Location = new System.Drawing.Point(472, 24);
             this.combo_Animal_type.Name = "combo_Animal_type";
             this.combo_Animal_type.Size = new System.Drawing.Size(121, 24);
@@ -137,14 +140,14 @@
             this.lbl_Animal_type.TabIndex = 10;
             this.lbl_Animal_type.Text = "animal type";
             // 
-            // label1
+            // lbl_show_all_animals
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(149, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "label1";
+            this.lbl_show_all_animals.AutoSize = true;
+            this.lbl_show_all_animals.Location = new System.Drawing.Point(663, 321);
+            this.lbl_show_all_animals.Name = "lbl_show_all_animals";
+            this.lbl_show_all_animals.Size = new System.Drawing.Size(178, 17);
+            this.lbl_show_all_animals.TabIndex = 11;
+            this.lbl_show_all_animals.Text = "show number of all animals";
             // 
             // chk_animal_state
             // 
@@ -173,15 +176,36 @@
             this.lblanimal_name.TabIndex = 14;
             this.lblanimal_name.Text = "animal name";
             // 
+            // btn_show_number_of_all_animals
+            // 
+            this.btn_show_number_of_all_animals.Location = new System.Drawing.Point(472, 303);
+            this.btn_show_number_of_all_animals.Name = "btn_show_number_of_all_animals";
+            this.btn_show_number_of_all_animals.Size = new System.Drawing.Size(149, 53);
+            this.btn_show_number_of_all_animals.TabIndex = 15;
+            this.btn_show_number_of_all_animals.Text = "show number of all animals";
+            this.btn_show_number_of_all_animals.UseVisualStyleBackColor = true;
+            this.btn_show_number_of_all_animals.Click += new System.EventHandler(this.btn_show_number_of_all_animals_Click);
+            // 
+            // lblshow_all_count_animals_2
+            // 
+            this.lblshow_all_count_animals_2.AutoSize = true;
+            this.lblshow_all_count_animals_2.BackColor = System.Drawing.Color.Yellow;
+            this.lblshow_all_count_animals_2.Location = new System.Drawing.Point(389, 321);
+            this.lblshow_all_count_animals_2.Name = "lblshow_all_count_animals_2";
+            this.lblshow_all_count_animals_2.Size = new System.Drawing.Size(0, 17);
+            this.lblshow_all_count_animals_2.TabIndex = 16;
+            // 
             // main_jungle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 364);
+            this.ClientSize = new System.Drawing.Size(867, 420);
+            this.Controls.Add(this.lblshow_all_count_animals_2);
+            this.Controls.Add(this.btn_show_number_of_all_animals);
             this.Controls.Add(this.lblanimal_name);
             this.Controls.Add(this.txtanimal_name);
             this.Controls.Add(this.chk_animal_state);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_show_all_animals);
             this.Controls.Add(this.lbl_Animal_type);
             this.Controls.Add(this.combo_Animal_type);
             this.Controls.Add(this.lblAnimal_Hunger);
@@ -191,7 +215,7 @@
             this.Controls.Add(this.txtAnimal_Number_Child);
             this.Controls.Add(this.txtAnimal_Amount_Hunger);
             this.Controls.Add(this.txtAnimal_Age);
-            this.Controls.Add(this.Rabit_add);
+            this.Controls.Add(this.btn_Rabit_add);
             this.Name = "main_jungle";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -202,7 +226,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Rabit_add;
+        private System.Windows.Forms.Button btn_Rabit_add;
         private System.Windows.Forms.TextBox txtAnimal_Age;
         private System.Windows.Forms.TextBox txtAnimal_Amount_Hunger;
         private System.Windows.Forms.TextBox txtAnimal_Number_Child;
@@ -212,10 +236,12 @@
         private System.Windows.Forms.Label lblAnimal_Hunger;
         private System.Windows.Forms.ComboBox combo_Animal_type;
         private System.Windows.Forms.Label lbl_Animal_type;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_show_all_animals;
         private System.Windows.Forms.CheckBox chk_animal_state;
         private System.Windows.Forms.TextBox txtanimal_name;
         private System.Windows.Forms.Label lblanimal_name;
+        private System.Windows.Forms.Button btn_show_number_of_all_animals;
+        private System.Windows.Forms.Label lblshow_all_count_animals_2;
     }
 }
 
